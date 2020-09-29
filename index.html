@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Submission Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/stylesheets/craft404.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/stylesheets/craft404.css" />
+  </head>
 
-<body>
+  <body>
     <section>
-        <img id="topLeft" src="public/svg/pattern 1.svg">
-        <img id="uppermidleft" src="public/svg/2.svg">
-        <img id="uppermidright" src="public/svg/pattern 2.svg">
-        <img id="topright" src="public/svg/Pattern 4.svg">
-        <img id="midright" src="public/svg/1.svg">
-        <img id="midleft" src="public/svg/pattern 2.svg">
-        <img id="bottomright" src="public/svg/21.svg">
-        <img id="bottomleft" src="public/svg/Pattern 4.svg">
-        <img id="bottom" src="public/svg/Pattern 3.svg">
-        <img id="logo" src="public/svg/logo-02.svg">
-        <form name="submissionForm" action="url.com" method="GET">
-            <div id="form">
-                <span> Your Name</span><br>
-                <input type="text" class="box"><br>
-                <span> Your Figma Link </span><br>
-                <input type="url" class="box"><br>
-                <button id="submit">Submit</button>
-            </div>
-        </form>
+      <img id="topLeft" src="public/svg/pattern 1.svg" />
+      <img id="uppermidleft" src="public/svg/2.svg" />
+      <img id="uppermidright" src="public/svg/pattern 2.svg" />
+      <img id="topright" src="public/svg/Pattern 4.svg" />
+      <img id="midright" src="public/svg/1.svg" />
+      <img id="midleft" src="public/svg/pattern 2.svg" />
+      <img id="bottomright" src="public/svg/21.svg" />
+      <img id="bottomleft" src="public/svg/Pattern 4.svg" />
+      <img id="bottom" src="public/svg/Pattern 3.svg" />
+      <img id="logo" src="public/svg/logo-02.svg" />
+      <form id="submissionForm" action="url.com" method="GET">
+        <div id="form">
+          <label for="name"> Your Name</label><br />
+          <input type="text" id="name" name="name" class="box" required /><br />
+          <label for="figma"> Your Figma Link </label><br />
+          <input
+            type="url"
+            id="figma"
+            name="figma"
+            class="box"
+            required
+          /><br />
+          <button id="submit">Submit</button>
+        </div>
+      </form>
     </section>
-</body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+    <script defer src="public/js/submission.js"></script>
+  </body>
 </html>
